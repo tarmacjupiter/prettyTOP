@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import classNames from "classnames";
-import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/toplogo.svg";
-
-const defaultProps = {
-  ...SectionProps.defaults,
-};
+import Logo from "../../components/elements/Logo";
+import Bugs from "../../components/elements/Bugs";
 
 const Hero = ({
   className,
@@ -50,80 +46,76 @@ const Hero = ({
   );
 
   return (
-    <section {...props} className={outerClasses}>
-      <div className="container-sm">
-        <div className={innerClasses}>
-          <div className="hero-content">
-            <Link to="/">
-              <img src={Logo} alt="TOP Logo" width={164} height={164} />
-            </Link>
-            <div>
-              <h1
-                className="mt-0 mb-16 reveal-from-bottom"
-                data-reveal-delay="200"
-              >
-                The Orthodox Project
-                <br />
-                <span className="text-color-primary" style={{ fontSize: 42 }}>
-                  TOP
-                </span>
-              </h1>
-            </div>
+    <div
+      style={{
+        justifyContent: "center",
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Logo />
+      <div>
+        <h1 style={{ textAlign: "center" }}>
+          The Orthodox Project
+          <br />
+          <span className="text-color-primary" style={{ fontSize: 42 }}>
+            TOP
+          </span>
+        </h1>
+      </div>
 
-            <div className="container-xs">
-              <p
-                className="m-0 mb-32 reveal-from-bottom"
-                data-reveal-delay="400"
-              >
-                A collection of all the slides, lectures, and videos from the
-                services provided by servants to highschooler. From St. Mary's
-                Coptic Orthodox Church
-              </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile>
-                    <Link to="/tableofcontents">To Slides</Link>
-                  </Button>
-                  <Button tag="a" color="dark" wideMobile>
-                    <Link to="/videos">To Videos</Link>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div
-            className="hero-figure reveal-from-bottom illustration-element-01"
-            data-reveal-value="20px"
-            data-reveal-delay="800"
-          >
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require("./../../assets/images/video-placeholder.jpg")}
-                alt="Hero"
-                width={896}
-                height={504}
-              />
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/148751763"
-            videoTag="iframe"
-          />
+      <div className="container-xs">
+        <p style={{ textAlign: "center" }}>
+          A collection of all the slides, lectures, and videos from the services
+          provided by servants to highschoolers. From St. Mary's Coptic Orthodox
+          Church of Chicago
+        </p>
+        <div
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            marginBottom: 30,
+          }}
+        >
+          <ButtonGroup>
+            <Button tag="a" color="primary" wideMobile>
+              <Link to="/tableofcontents">To Slides</Link>
+            </Button>
+            <Button tag="a" color="primary" wideMobile>
+              <Link to="/videos">To Videos</Link>
+            </Button>
+          </ButtonGroup>
         </div>
       </div>
-    </section>
+      <div>
+        <a
+          data-video="https://player.vimeo.com/video/174002812"
+          href="#0"
+          aria-controls="video-modal"
+          onClick={openModal}
+        >
+          <Image
+            className="has-shadow"
+            src={require("./../../assets/images/video-placeholder.jpg")}
+            alt="Hero"
+            width={896}
+            height={504}
+            style={{ paddingBottom: 30 }}
+          />
+        </a>
+      </div>
+      <Modal
+        id="video-modal"
+        show={videoModalActive}
+        handleClose={closeModal}
+        video="https://player.vimeo.com/video/148751763"
+        videoTag="iframe"
+      />
+      <Bugs />
+    </div>
   );
 };
-
-Hero.defaultProps = defaultProps;
 
 export default Hero;
