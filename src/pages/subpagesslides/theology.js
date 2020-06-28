@@ -30,25 +30,23 @@ const useStyles = makeStyles({
   },
 });
 
-function openOrthodoxy() {
-  window.open(
-    "https://en.wikipedia.org/wiki/Orthodoxy#:~:text=Orthodoxy%20(from%20Greek%20%E1%BD%80%CF%81%CE%B8%CE%BF%CE%B4%CE%BF%CE%BE%CE%AF%CE%B1%20orthodox%C3%ADa,accepted%20creeds%2C%20especially%20in%20religion."
-  );
+function openTheology() {
+  window.open("https://en.wikipedia.org/wiki/Theology");
 }
 
-export default function Orthodoxy() {
+export default function Theology() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <div>
       <Logo />
-      <h1 style={{ textAlign: "center" }}>Orthodoxy</h1>
+      <h1 style={{ textAlign: "center" }}>Theology</h1>
       <div>
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
-              or{bull}tho{bull}dox{bull}y
+              the{bull}ol{bull}o{bull}gy
             </Typography>
             <Typography className={classes.pos} color="textSecondary">
               noun
@@ -58,17 +56,16 @@ export default function Orthodoxy() {
               component="p"
               style={{ color: "white" }}
             >
-              is adherence to correct or accepted creeds, especially in
-              religion. In the Christian sense the term means "conforming to the
-              Christian faith as represented in the creeds of the early Church."
-              The first seven ecumenical councils were held between the years of
-              325 and 787 with the aim of formalizing accepted
+              the systematic study of the nature of the Divine and, more
+              broadly, of religious belief. It is taught as an academic
+              discipline, typically in universities and seminaries. "He has an
+              interest in theology and pastoral work."
               <br />
               {'"monetarist orthodoxy"'}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button onClick={openOrthodoxy} color="primary">
+            <Button onClick={openTheology} color="primary">
               Learn More
             </Button>
           </CardActions>

@@ -30,25 +30,23 @@ const useStyles = makeStyles({
   },
 });
 
-function openOrthodoxy() {
-  window.open(
-    "https://en.wikipedia.org/wiki/Orthodoxy#:~:text=Orthodoxy%20(from%20Greek%20%E1%BD%80%CF%81%CE%B8%CE%BF%CE%B4%CE%BF%CE%BE%CE%AF%CE%B1%20orthodox%C3%ADa,accepted%20creeds%2C%20especially%20in%20religion."
-  );
-}
+const openApologetics = () => {
+  window.open("https://en.wikipedia.org/wiki/Apologetics");
+};
 
-export default function Orthodoxy() {
+export default function Apologetics() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <div>
       <Logo />
-      <h1 style={{ textAlign: "center" }}>Orthodoxy</h1>
+      <h1 style={{ textAlign: "center" }}>Apologetics</h1>
       <div>
         <Card className={classes.root}>
           <CardContent>
             <Typography variant="h5" component="h2">
-              or{bull}tho{bull}dox{bull}y
+              a{bull}pol{bull}o{bull}get{bull}ics
             </Typography>
             <Typography className={classes.pos} color="textSecondary">
               noun
@@ -58,17 +56,17 @@ export default function Orthodoxy() {
               component="p"
               style={{ color: "white" }}
             >
-              is adherence to correct or accepted creeds, especially in
-              religion. In the Christian sense the term means "conforming to the
-              Christian faith as represented in the creeds of the early Church."
-              The first seven ecumenical councils were held between the years of
-              325 and 787 with the aim of formalizing accepted
+              the religious discipline of defending religious doctrines through
+              systematic argumentation and discourse. Early Christian writers
+              who defended their beliefs against critics and recommended their
+              faith to outsiders were called Christian apologists. "free market
+              apologetics"
               <br />
               {'"monetarist orthodoxy"'}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button onClick={openOrthodoxy} color="primary">
+            <Button onClick={openApologetics} color="primary">
               Learn More
             </Button>
           </CardActions>

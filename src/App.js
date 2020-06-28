@@ -20,6 +20,8 @@ import whyOrthodox from "./pages/subpagesvideos/whyOrthodox";
 import criticalDoctrines from "./pages/subpagesvideos/criticalDoctrines";
 import fallenNature from "./pages/subpagesvideos/fallenNature";
 import orthodoxy from "./pages/subpagesslides/orthodoxy";
+import theology from "./pages/subpagesslides/theology";
+import apologetics from "./pages/subpagesslides/apologetics";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -82,6 +84,18 @@ const App = () => {
               exact
               path="/tableofcontents/orthodoxy"
               component={orthodoxy}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/theology"
+              component={theology}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/apologetics"
+              component={apologetics}
               layout={LayoutDefault}
             />
           </Switch>

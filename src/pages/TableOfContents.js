@@ -38,7 +38,7 @@ export default function TableOfContents() {
           wideMobile
           style={{ width: "200%", margin: 10 }}
         >
-          <Link to="/tableofcontents/orthodoxy">Theology</Link>
+          <Link to="/tableofcontents/theology">Theology</Link>
         </Button>
         <Button
           tag="a"
@@ -46,7 +46,7 @@ export default function TableOfContents() {
           wideMobile
           style={{ width: "200%", margin: 10 }}
         >
-          <Link to="/tableofcontents/orthodoxy">Apologetics</Link>
+          <Link to="/tableofcontents/apologetics">Apologetics</Link>
         </Button>
       </div>
       <h1 style={{ textAlign: "center" }}> Google Slide Presentations </h1>
