@@ -16,6 +16,10 @@ import LayoutDefault from "./layouts/LayoutDefault";
 import Home from "./views/Home";
 import TableOfContents from "./pages/TableOfContents";
 import Videos from "./pages/Videos";
+import whyOrthodox from "./pages/subpagesvideos/whyOrthodox";
+import criticalDoctrines from "./pages/subpagesvideos/criticalDoctrines";
+import fallenNature from "./pages/subpagesvideos/fallenNature";
+import orthodoxy from "./pages/subpagesslides/orthodoxy";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -54,6 +58,30 @@ const App = () => {
               exact
               path="/videos"
               component={Videos}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/videos/whyorthodox"
+              component={whyOrthodox}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/videos/8criticaldoctrines"
+              component={criticalDoctrines}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/videos/fallennature"
+              component={fallenNature}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/orthodoxy"
+              component={orthodoxy}
               layout={LayoutDefault}
             />
           </Switch>

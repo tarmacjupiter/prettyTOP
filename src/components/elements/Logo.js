@@ -10,10 +10,11 @@ export default function TopLogo() {
         alignItems: "center",
         display: "flex",
         flexDirection: "column",
+        flex: 1,
       }}
     >
       <Link to="/">
-        <img src={Logo} alt="TOP Logo" width={164} height={164} />
+        <img src={Logo} alt="TOP Logo" width={200} height={200} />
       </Link>
     </div>
   );

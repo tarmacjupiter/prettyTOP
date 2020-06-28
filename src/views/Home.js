@@ -1,7 +1,7 @@
 import React from "react";
 // import sections
 import Hero from "../components/sections/Hero";
-import Cta from "../components/sections/Cta";
+import Header from "../components/layout/Header";
 
 const Home = () => {
   return (

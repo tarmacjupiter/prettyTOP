@@ -20,10 +20,10 @@ export default function BugsButton() {
       <h6>Any Bugs? Contact Me Here:</h6>
       <Button
         tag="a"
-        color="secondary"
+        color="dark"
         wideMobile
         onClick={openForm}
-        style={{ marginBottom: 30, color: "black" }}
+        style={{ marginBottom: 30 }}
       >
         Bugs
       </Button>

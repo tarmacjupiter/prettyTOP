@@ -59,7 +59,7 @@ const Hero = ({
         <h1 style={{ textAlign: "center" }}>
           The Orthodox Project
           <br />
-          <span className="text-color-primary" style={{ fontSize: 42 }}>
+          <span className="text-color-primary" style={{ fontSize: 32 }}>
             TOP
           </span>
         </h1>
