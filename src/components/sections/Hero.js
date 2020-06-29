@@ -53,7 +53,7 @@ const Hero = ({
         <p style={{ textAlign: "center" }}>
           A collection of all the slides, lectures, and videos from the services
           provided by servants to highschoolers. From St. Mary's Coptic Orthodox
-          Church of Chicago. TEST FOR CONNECTION
+          Church of Chicago.
         </p>
         <div
           style={{
