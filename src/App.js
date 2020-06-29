@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
-import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 import ReactGA from "react-ga";
 

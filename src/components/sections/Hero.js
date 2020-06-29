@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import classNames from "classnames";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
@@ -29,21 +28,6 @@ const Hero = ({
     e.preventDefault();
     setVideomodalactive(false);
   };
-
-  const outerClasses = classNames(
-    "hero section center-content",
-    topOuterDivider && "has-top-divider",
-    bottomOuterDivider && "has-bottom-divider",
-    hasBgColor && "has-bg-color",
-    invertColor && "invert-color",
-    className
-  );
-
-  const innerClasses = classNames(
-    "hero-inner section-inner",
-    topDivider && "has-top-divider",
-    bottomDivider && "has-bottom-divider"
-  );
 
   return (
     <div
@@ -98,7 +82,7 @@ const Hero = ({
         >
           <Image
             className="has-shadow"
-            src={require("./../../assets/images/video-placeholder.jpg")}
+            src={require("./../../assets/images/topthumbnail.jpeg")}
             alt="Hero"
             width={896}
             height={504}
@@ -110,7 +94,7 @@ const Hero = ({
         id="video-modal"
         show={videoModalActive}
         handleClose={closeModal}
-        video="https://player.vimeo.com/video/148751763"
+        video="https://player.vimeo.com/video/433719963"
         videoTag="iframe"
       />
       <Bugs />
