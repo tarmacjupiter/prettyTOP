@@ -77,10 +77,7 @@ export default function TableOfContents() {
           wideMobile
           style={{ width: "200%", margin: 10 }}
         >
-          <Link
-            to="/tableofcontents/evidenceofchrist"
-            style={{ color: "black" }}
-          >
+          <Link to="/tableofcontents/ihaveadream" style={{ color: "black" }}>
             I Have a Dream
           </Link>
         </Button>
@@ -91,7 +88,7 @@ export default function TableOfContents() {
           style={{ width: "200%", margin: 10 }}
         >
           <Link
-            to="/tableofcontents/evidenceofchrist"
+            to="/tableofcontents/apolotalkseries"
             style={{ color: "black" }}
           >
             Apolo Talk Series

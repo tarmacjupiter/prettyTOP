@@ -21,6 +21,12 @@ import fallenNature from "./pages/subpagesvideos/fallenNature";
 import orthodoxy from "./pages/subpagesslides/orthodoxy";
 import theology from "./pages/subpagesslides/theology";
 import apologetics from "./pages/subpagesslides/apologetics";
+import EvidenceOfChrist from "./pages/subpagesslides/googleslides/evidenceOfChrist";
+import IHaveADream from "./pages/subpagesslides/googleslides/iHaveADream";
+import ApoloTalkSeries from "./pages/subpagesslides/googleslides/apoloTalkSeries";
+import ApoloPartOne from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartOne";
+import ApoloPartTwo from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartTwo";
+import ApoloPartThree from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartThree";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -95,6 +101,44 @@ const App = () => {
               exact
               path="/tableofcontents/apologetics"
               component={apologetics}
+              layout={LayoutDefault}
+            />
+            {/* GOOGLE SLIDE PRESENTAITIONS */}
+            <Route
+              exact
+              path="/tableofcontents/evidenceofchrist"
+              component={EvidenceOfChrist}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/ihaveadream"
+              component={IHaveADream}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/apolotalkseries"
+              component={ApoloTalkSeries}
+              layout={LayoutDefault}
+            />
+            {/* APOLO SERIES */}
+            <Route
+              exact
+              path="/tableofcontents/apolotalkseries/apolotalkpart1"
+              component={ApoloPartOne}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/apolotalkseries/apolotalkpart2"
+              component={ApoloPartTwo}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/tableofcontents/apolotalkseries/apolotalkpart3"
+              component={ApoloPartThree}
               layout={LayoutDefault}
             />
           </Switch>

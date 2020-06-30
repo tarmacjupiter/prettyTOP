@@ -15,9 +15,7 @@ export default function TableOfContents() {
       }}
     >
       <Logo />
-      <h1 style={{ textAlign: "center", margin: 20 }}>
-        Below Are Some of the Videos
-      </h1>
+      <h1 style={{ textAlign: "center" }}>Below Are Some of the Videos</h1>
       <div
         style={{
           flexDirection: "column",
