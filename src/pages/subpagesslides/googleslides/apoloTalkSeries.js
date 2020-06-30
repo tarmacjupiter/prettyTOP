@@ -27,45 +27,77 @@ export default function ApoloTalkSeries() {
           alignItems: "center",
         }}
       >
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+        <Link
+          to="/tableofcontents/apolotalkseries/apolotalkpart1"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link
-            to="/tableofcontents/apolotalkseries/apolotalkpart1"
-            style={{ color: "black" }}
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
           >
-            Apolo Talk Part 1
-          </Link>
-        </Button>
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+            <Link
+              to="/tableofcontents/apolotalkseries/apolotalkpart1"
+              style={{ color: "black" }}
+            >
+              Apolo Talk Part 1
+            </Link>
+          </Button>
+        </Link>
+
+        <Link
+          to="/tableofcontents/apolotalkseries/apolotalkpart2"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link
-            to="/tableofcontents/apolotalkseries/apolotalkpart2"
-            style={{ color: "black" }}
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
           >
-            Apolo Talk Part 2
-          </Link>
-        </Button>
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+            <Link
+              to="/tableofcontents/apolotalkseries/apolotalkpart2"
+              style={{ color: "black" }}
+            >
+              Apolo Talk Part 2
+            </Link>
+          </Button>
+        </Link>
+
+        <Link
+          to="/tableofcontents/apolotalkseries/apolotalkpart3"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link
-            to="/tableofcontents/apolotalkseries/apolotalkpart3"
-            style={{ color: "black" }}
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
           >
-            Apolo Talk Part 3
-          </Link>
-        </Button>
+            <Link
+              to="/tableofcontents/apolotalkseries/apolotalkpart3"
+              style={{ color: "black" }}
+            >
+              Apolo Talk Part 3
+            </Link>
+          </Button>
+        </Link>
       </div>
       <Bugs />
     </div>

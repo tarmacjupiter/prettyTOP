@@ -64,12 +64,16 @@ const Hero = ({
           }}
         >
           <ButtonGroup>
-            <Button tag="a" color="primary" wideMobile>
-              <Link to="/tableofcontents">To Slides</Link>
-            </Button>
-            <Button tag="a" color="primary" wideMobile>
-              <Link to="/videos">To Videos</Link>
-            </Button>
+            <Link to="/tableofcontents" style={{ marginRight: 10 }}>
+              <Button tag="a" color="primary" wideMobile>
+                <Link to="/tableofcontents">To Slides</Link>
+              </Button>
+            </Link>
+            <Link to="/videos">
+              <Button tag="a" color="primary" wideMobile>
+                <Link to="/videos">To Videos</Link>
+              </Button>
+            </Link>
           </ButtonGroup>
         </div>
       </div>

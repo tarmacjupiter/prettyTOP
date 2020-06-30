@@ -24,30 +24,61 @@ export default function TableOfContents() {
           alignItems: "center",
         }}
       >
-        <Button
-          tag="a"
-          color="primary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+        <Link
+          to="/tableofcontents/orthodoxy"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link to="/tableofcontents/orthodoxy">Orthodoxy</Link>
-        </Button>
-        <Button
-          tag="a"
-          color="primary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+          <Button
+            tag="a"
+            color="primary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
+          >
+            <Link to="/tableofcontents/orthodoxy">Orthodoxy</Link>
+          </Button>
+        </Link>
+
+        <Link
+          to="/tableofcontents/theology"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link to="/tableofcontents/theology">Theology</Link>
-        </Button>
-        <Button
-          tag="a"
-          color="primary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+          <Button
+            tag="a"
+            color="primary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
+          >
+            <Link to="/tableofcontents/theology">Theology</Link>
+          </Button>
+        </Link>
+        <Link
+          to="/tableofcontents/apologetics"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link to="/tableofcontents/apologetics">Apologetics</Link>
-        </Button>
+          <Button
+            tag="a"
+            color="primary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
+          >
+            <Link to="/tableofcontents/apologetics">Apologetics</Link>
+          </Button>
+        </Link>
       </div>
       <h1 style={{ textAlign: "center" }}> Google Slide Presentations </h1>
       <div
@@ -58,42 +89,74 @@ export default function TableOfContents() {
           alignItems: "center",
         }}
       >
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+        <Link
+          to="/tableofcontents/evidenceofchrist"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link
-            to="/tableofcontents/evidenceofchrist"
-            style={{ color: "black" }}
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
           >
-            Evidence of Christ
-          </Link>
-        </Button>
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
+            <Link
+              to="/tableofcontents/evidenceofchrist"
+              style={{ color: "black" }}
+            >
+              Evidence of Christ
+            </Link>
+          </Button>
+        </Link>
+
+        <Link
+          to="/tableofcontents/ihaveadream"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
         >
-          <Link to="/tableofcontents/ihaveadream" style={{ color: "black" }}>
-            I Have a Dream
-          </Link>
-        </Button>
-        <Button
-          tag="a"
-          color="secondary"
-          wideMobile
-          style={{ width: "200%", margin: 10 }}
-        >
-          <Link
-            to="/tableofcontents/apolotalkseries"
-            style={{ color: "black" }}
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
           >
-            Apolo Talk Series
-          </Link>
-        </Button>
+            <Link to="/tableofcontents/ihaveadream" style={{ color: "black" }}>
+              I Have a Dream
+            </Link>
+          </Button>
+        </Link>
+
+        <Link
+          to="/tableofcontents/apolotalkseries"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignSelf: "center",
+            width: "210%",
+          }}
+        >
+          <Button
+            tag="a"
+            color="secondary"
+            wideMobile
+            style={{ width: "200%", margin: 10 }}
+          >
+            <Link
+              to="/tableofcontents/apolotalkseries"
+              style={{ color: "black" }}
+            >
+              Apolo Talk Series
+            </Link>
+          </Button>
+        </Link>
       </div>
       <Bugs />
     </div>
