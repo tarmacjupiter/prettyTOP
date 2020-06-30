@@ -3,7 +3,7 @@ import Button from "../elements/Button";
 
 function openForm() {
   window.open(
-    "https://docs.google.com/forms/d/1YryjWjCkPayihzjy3uBoX6Q1JG7TZVQ9-2PnX7HxWqc/prefill"
+    "https://docs.google.com/forms/d/e/1FAIpQLSdcgnC878u0Um6eFqtKPIEh2vDde4kuXlQgFEmJjeh2n2ah9w/viewform?usp=sf_link"
   );
 }
 
