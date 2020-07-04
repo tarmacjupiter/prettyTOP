@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../components/elements/Logo";
-import { Link } from "react-router-dom";
 
 export default function pageNotFound() {
   return (

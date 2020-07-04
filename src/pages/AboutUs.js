@@ -3,7 +3,6 @@ import Logo from "../components/elements/Logo";
 import Bugs from "../components/elements/Bugs";
 import Michael from "../assets/images/profiles/michael.jpg";
 import Anthony from "../assets/images/profiles/anthony.png";
-import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
@@ -46,6 +45,7 @@ export default function AboutUs() {
             style={{ textDecoration: "underline", color: "#5658DD" }}
             target="_blank"
             href="https://github.com/cruip/open-react-template"
+            rel="noopener noreferrer"
           >
             Open
           </a>
