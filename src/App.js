@@ -4,6 +4,7 @@ import {
   Switch,
   BrowserRouter as Router,
   Route,
+  Redirect,
 } from "react-router-dom";
 import ScrollReveal from "./utils/ScrollReveal";
 import ReactGA from "react-ga";
@@ -27,6 +28,8 @@ import ApoloTalkSeries from "./pages/subpagesslides/googleslides/apoloTalkSeries
 import ApoloPartOne from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartOne";
 import ApoloPartTwo from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartTwo";
 import ApoloPartThree from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartThree";
+import pageNotFound from "./pages/404";
+import AboutUs from "./pages/AboutUs";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -65,6 +68,12 @@ const App = () => {
               exact
               path="/videos"
               component={Videos}
+              layout={LayoutDefault}
+            />
+            <Route
+              exact
+              path="/aboutus"
+              component={AboutUs}
               layout={LayoutDefault}
             />
             <Route
@@ -141,6 +150,14 @@ const App = () => {
               component={ApoloPartThree}
               layout={LayoutDefault}
             />
+            {/* 404 PAGE */}
+            <Route
+              exact
+              path="/404"
+              component={pageNotFound}
+              layout={LayoutDefault}
+            />
+            <Redirect to="/404" />
           </Switch>
         </Router>
       )}

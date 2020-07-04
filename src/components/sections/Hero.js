@@ -76,6 +76,22 @@ const Hero = ({
             </Link>
           </ButtonGroup>
         </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: 30,
+          }}
+        >
+          <Link to="/aboutus">
+            <Button tag="a" color="secondary" wideMobile>
+              <Link to="/aboutus" style={{ color: "black" }}>
+                About Us
+              </Link>
+            </Button>
+          </Link>
+        </div>
       </div>
       <div>
         <a
