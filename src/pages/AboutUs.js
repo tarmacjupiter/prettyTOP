@@ -12,7 +12,7 @@ export default function AboutUs() {
     <div>
       <Logo />
       <h1 style={{ textAlign: "center" }}>About Us</h1>>
-      <Carousel slidesPerPage={1} centered dots>
+      <Carousel slidesPerPage={1} centered dots arrows>
         <div
           style={{
             display: "flex",
