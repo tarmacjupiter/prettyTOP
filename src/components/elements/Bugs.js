@@ -17,7 +17,7 @@ export default function BugsButton() {
         flexDirection: "column",
       }}
     >
-      <h6>Any Bugs? Contact Me Here:</h6>
+      <h6>Any Bugs? Contact Us Here:</h6>
       <Button
         tag="a"
         color="dark"
