@@ -12,24 +12,22 @@ import ReactGA from "react-ga";
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault";
 
+//Page Components
+import SlidesPages from "./pages/subpagesslides/googleslides/slidesPages";
+
+//Data
+import data from "./site-data.json";
+
 // Views
 import Home from "./views/Home";
 import TableOfContents from "./pages/TableOfContents";
 import Videos from "./pages/Videos";
-import whyOrthodox from "./pages/subpagesvideos/whyOrthodox";
-import criticalDoctrines from "./pages/subpagesvideos/criticalDoctrines";
-import fallenNature from "./pages/subpagesvideos/fallenNature";
 import orthodoxy from "./pages/subpagesslides/orthodoxy";
 import theology from "./pages/subpagesslides/theology";
 import apologetics from "./pages/subpagesslides/apologetics";
-import EvidenceOfChrist from "./pages/subpagesslides/googleslides/evidenceOfChrist";
-import IHaveADream from "./pages/subpagesslides/googleslides/iHaveADream";
-import ApoloTalkSeries from "./pages/subpagesslides/googleslides/apoloTalkSeries";
-import ApoloPartOne from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartOne";
-import ApoloPartTwo from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartTwo";
-import ApoloPartThree from "./pages/subpagesslides/googleslides/ApoloTalkSeries/ApoloPartThree";
 import pageNotFound from "./pages/404";
 import AboutUs from "./pages/AboutUs";
+import VideoPages from "./pages/subpagesvideos/videoPages";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -70,6 +68,39 @@ const App = () => {
               component={Videos}
               layout={LayoutDefault}
             />
+            {/* Google Slides */}
+            <Route
+              exact
+              path="/tableofcontents/evidenceofchrist"
+              render={() => (
+                <SlidesPages
+                  name={data.pages.googleSlidePages.evidenceOfChrist.name}
+                  youtubeurl={
+                    data.pages.googleSlidePages.evidenceOfChrist.youtubeurl
+                  }
+                  googleslideurl={
+                    data.pages.googleSlidePages.evidenceOfChrist.googleslideurl
+                  }
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/tableofcontents/ihaveadream"
+              render={() => (
+                <SlidesPages
+                  name={data.pages.googleSlidePages.iHaveADream.name}
+                  youtubeurl={
+                    data.pages.googleSlidePages.iHaveADream.youtubeurl
+                  }
+                  googleslideurl={
+                    data.pages.googleSlidePages.iHaveADream.googleslideurl
+                  }
+                />
+              )}
+            />
+            {/* Google Slides End */}
+
             <Route
               exact
               path="/aboutus"
@@ -79,19 +110,36 @@ const App = () => {
             <Route
               exact
               path="/videos/whyorthodox"
-              component={whyOrthodox}
+              render={() => (
+                <VideoPages
+                  name={data.pages.videoPages.whyOrthodox.name}
+                  youtubeurl={data.pages.videoPages.whyOrthodox.youtubeurl}
+                />
+              )}
               layout={LayoutDefault}
             />
             <Route
               exact
               path="/videos/8criticaldoctrines"
-              component={criticalDoctrines}
+              render={() => (
+                <VideoPages
+                  name={data.pages.videoPages.eightCriticalDoctrines.name}
+                  youtubeurl={
+                    data.pages.videoPages.eightCriticalDoctrines.youtubeurl
+                  }
+                />
+              )}
               layout={LayoutDefault}
             />
             <Route
               exact
               path="/videos/fallennature"
-              component={fallenNature}
+              render={() => (
+                <VideoPages
+                  name={data.pages.videoPages.fallenNature.name}
+                  youtubeurl={data.pages.videoPages.fallenNature.youtubeurl}
+                />
+              )}
               layout={LayoutDefault}
             />
             <Route
@@ -112,44 +160,7 @@ const App = () => {
               component={apologetics}
               layout={LayoutDefault}
             />
-            {/* GOOGLE SLIDE PRESENTAITIONS */}
-            <Route
-              exact
-              path="/tableofcontents/evidenceofchrist"
-              component={EvidenceOfChrist}
-              layout={LayoutDefault}
-            />
-            <Route
-              exact
-              path="/tableofcontents/ihaveadream"
-              component={IHaveADream}
-              layout={LayoutDefault}
-            />
-            <Route
-              exact
-              path="/tableofcontents/apolotalkseries"
-              component={ApoloTalkSeries}
-              layout={LayoutDefault}
-            />
-            {/* APOLO SERIES */}
-            <Route
-              exact
-              path="/tableofcontents/apolotalkseries/apolotalkpart1"
-              component={ApoloPartOne}
-              layout={LayoutDefault}
-            />
-            <Route
-              exact
-              path="/tableofcontents/apolotalkseries/apolotalkpart2"
-              component={ApoloPartTwo}
-              layout={LayoutDefault}
-            />
-            <Route
-              exact
-              path="/tableofcontents/apolotalkseries/apolotalkpart3"
-              component={ApoloPartThree}
-              layout={LayoutDefault}
-            />
+
             {/* 404 PAGE */}
             <Route
               exact

@@ -133,30 +133,6 @@ export default function TableOfContents() {
             </Link>
           </Button>
         </Link>
-
-        <Link
-          to="/tableofcontents/apolotalkseries"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignSelf: "center",
-            width: "210%",
-          }}
-        >
-          <Button
-            tag="a"
-            color="secondary"
-            wideMobile
-            style={{ width: "200%", margin: 10 }}
-          >
-            <Link
-              to="/tableofcontents/apolotalkseries"
-              style={{ color: "black" }}
-            >
-              Apolo Talk Series
-            </Link>
-          </Button>
-        </Link>
       </div>
       <Bugs />
     </div>

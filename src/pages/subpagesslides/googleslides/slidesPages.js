@@ -4,11 +4,11 @@ import Bugs from "../../../components/elements/Bugs";
 import ReactGoogleSlides from "react-google-slides";
 import ReactPlayer from "react-player";
 
-export default function EvidenceOfChrist() {
+export default function SlidesPages(props) {
   return (
     <div>
       <Logo />
-      <h1 style={{ textAlign: "center" }}>Evidence Of Christ</h1>
+      <h1 style={{ textAlign: "center" }}>{props.name}</h1>
       <div
         style={{
           flex: 1,
@@ -20,13 +20,13 @@ export default function EvidenceOfChrist() {
         <ReactGoogleSlides
           width={640}
           height={430}
-          slidesLink="https://docs.google.com/presentation/d/1-a4C-HahR-jydxzfhc9wTAJjNMyDGPSmB7VyE4Ojhq0/edit?usp=sharing"
+          slidesLink={props.googleslideurl}
           showControls
           wideMobile
           slideDuration={999999}
         />
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          url={props.youtubeurl}
           style={{ marginRight: 10 }}
           width={640}
           height={430}
