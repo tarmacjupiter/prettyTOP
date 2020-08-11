@@ -7,14 +7,14 @@ import David from "../assets/images/profiles/david.jpg";
 import Theo from "../assets/images/profiles/theo.JPG";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 export default function AboutUs() {
   return (
     <div>
       <Logo />
-      <h1 style={{ textAlign: "center" }}>About Us</h1>>
+      <h1 style={{ textAlign: "center" }}>About Us</h1>
       <Carousel slidesPerPage={1} centered dots arrows infinite>
         <div
           style={{
